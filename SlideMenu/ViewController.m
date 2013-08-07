@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property(nonatomic,retain) NSMutableArray *viewControllers;
+
 @end
 
 @implementation ViewController
@@ -18,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self performSegueWithIdentifier:@"menu" sender:self];
 }
 
 - (void)didReceiveMemoryWarning

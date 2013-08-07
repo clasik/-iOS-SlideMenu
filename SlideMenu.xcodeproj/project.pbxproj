@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC9786A17B1DECF0003D870 /* ContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9786917B1DECF0003D870 /* ContentSegue.m */; };
+		5EC9787117B1F8300003D870 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9787017B1F8300003D870 /* MenuViewController.m */; };
+		5EC9787517B1F88B0003D870 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9787417B1F88B0003D870 /* MenuCell.m */; };
 		5EED768017B0FE50003BEB53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED767F17B0FE50003BEB53 /* UIKit.framework */; };
 		5EED768217B0FE50003BEB53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED768117B0FE50003BEB53 /* Foundation.framework */; };
 		5EED768417B0FE50003BEB53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED768317B0FE50003BEB53 /* CoreGraphics.framework */; };
@@ -18,9 +21,16 @@
 		5EED769617B0FE50003BEB53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EED769517B0FE50003BEB53 /* Default-568h@2x.png */; };
 		5EED769917B0FE50003BEB53 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EED769717B0FE50003BEB53 /* MainStoryboard.storyboard */; };
 		5EED769C17B0FE50003BEB53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED769B17B0FE50003BEB53 /* ViewController.m */; };
+		5EED76A417B0FF42003BEB53 /* LeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED76A317B0FF42003BEB53 /* LeftMenuSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EC9786817B1DECF0003D870 /* ContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSegue.h; sourceTree = "<group>"; };
+		5EC9786917B1DECF0003D870 /* ContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSegue.m; sourceTree = "<group>"; };
+		5EC9786F17B1F8300003D870 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		5EC9787017B1F8300003D870 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		5EC9787317B1F88B0003D870 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		5EC9787417B1F88B0003D870 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
 		5EED767C17B0FE50003BEB53 /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EED767F17B0FE50003BEB53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EED768117B0FE50003BEB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +47,8 @@
 		5EED769817B0FE50003BEB53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5EED769A17B0FE50003BEB53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5EED769B17B0FE50003BEB53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5EED76A217B0FF42003BEB53 /* LeftMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuSegue.h; sourceTree = "<group>"; };
+		5EED76A317B0FF42003BEB53 /* LeftMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EC9786B17B1F7C20003D870 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5EED76A217B0FF42003BEB53 /* LeftMenuSegue.h */,
+				5EED76A317B0FF42003BEB53 /* LeftMenuSegue.m */,
+				5EC9786817B1DECF0003D870 /* ContentSegue.h */,
+				5EC9786917B1DECF0003D870 /* ContentSegue.m */,
+			);
+			name = SlideMenu;
+			sourceTree = "<group>";
+		};
+		5EC9787217B1F8580003D870 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				5EC9786F17B1F8300003D870 /* MenuViewController.h */,
+				5EC9787017B1F8300003D870 /* MenuViewController.m */,
+				5EC9787317B1F88B0003D870 /* MenuCell.h */,
+				5EC9787417B1F88B0003D870 /* MenuCell.m */,
+			);
+			name = LeftMenu;
+			sourceTree = "<group>";
+		};
 		5EED767317B0FE50003BEB53 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +123,8 @@
 				5EED769A17B0FE50003BEB53 /* ViewController.h */,
 				5EED769B17B0FE50003BEB53 /* ViewController.m */,
 				5EED768617B0FE50003BEB53 /* Supporting Files */,
+				5EC9786B17B1F7C20003D870 /* SlideMenu */,
+				5EC9787217B1F8580003D870 /* LeftMenu */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -176,6 +212,10 @@
 				5EED768C17B0FE50003BEB53 /* main.m in Sources */,
 				5EED769017B0FE50003BEB53 /* AppDelegate.m in Sources */,
 				5EED769C17B0FE50003BEB53 /* ViewController.m in Sources */,
+				5EED76A417B0FF42003BEB53 /* LeftMenuSegue.m in Sources */,
+				5EC9786A17B1DECF0003D870 /* ContentSegue.m in Sources */,
+				5EC9787117B1F8300003D870 /* MenuViewController.m in Sources */,
+				5EC9787517B1F88B0003D870 /* MenuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +338,7 @@
 				5EED76A117B0FE50003BEB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
