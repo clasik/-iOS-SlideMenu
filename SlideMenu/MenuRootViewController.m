@@ -6,21 +6,22 @@
 //  Copyright (c) 2013年 Lin Dennis. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MenuRootViewController.h"
 
-@interface ViewController ()
+@interface MenuRootViewController ()
 
 @property(nonatomic,retain) NSMutableArray *viewControllers;
 
 @end
 
-@implementation ViewController
+@implementation MenuRootViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self performSegueWithIdentifier:@"menu" sender:self];
+    [self performSegueWithIdentifier:@"first" sender:self];
 }
 
 - (void)didReceiveMemoryWarning
