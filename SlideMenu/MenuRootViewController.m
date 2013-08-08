@@ -22,6 +22,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self performSegueWithIdentifier:@"menu" sender:self];
     [self performSegueWithIdentifier:@"first" sender:self];
+    
+    [UIView animateWithDuration:0.5 animations:^(void){
+        self.CurrentController.view.frame = CGRectMake(240, self.CurrentController.view.frame.origin.y, self.CurrentController.view.frame.size.width, self.CurrentController.view.frame.size.height);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

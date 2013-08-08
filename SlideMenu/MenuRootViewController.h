@@ -10,4 +10,7 @@
 
 @interface MenuRootViewController : UIViewController
 
+@property(nonatomic,retain) UIViewController *MenuController;
+@property(nonatomic,retain) UIViewController *CurrentController;
+
 @end

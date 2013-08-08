@@ -7,12 +7,13 @@
 //
 
 #import "LeftMenuSegue.h"
+#import "MenuRootViewController.h"
 
 @implementation LeftMenuSegue
 
 -(void)perform
 {
-    UIViewController *rootController = self.sourceViewController;
+    MenuRootViewController *rootController = self.sourceViewController;
     UIViewController *menuController = self.destinationViewController;
     
     CGRect bounds = rootController.view.bounds;
@@ -22,6 +23,8 @@
     [rootController addChildViewController:menuController];
     [rootController.view addSubview:menuController.view];
     [menuController didMoveToParentViewController:rootController];
+    
+    [rootController setMenuController:menuController];
 }
 
 @end

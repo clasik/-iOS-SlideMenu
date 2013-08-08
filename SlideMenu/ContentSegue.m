@@ -7,12 +7,12 @@
 //
 
 #import "ContentSegue.h"
-
+#import "MenuRootViewController.h"
 @implementation ContentSegue
 
 -(void)perform
 {
-    UIViewController *rootController = self.sourceViewController;
+    MenuRootViewController *rootController = self.sourceViewController;
     UIViewController *contentController = self.destinationViewController;
     
     CGRect bounds = rootController.view.bounds;
@@ -22,6 +22,8 @@
     [rootController addChildViewController:contentController];
     [rootController.view addSubview:contentController.view];
     [contentController didMoveToParentViewController:rootController];
+    
+    [rootController setCurrentController:contentController];
 }
 
 @end
