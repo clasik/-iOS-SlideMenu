@@ -71,6 +71,8 @@
 		5EC9786B17B1F7C20003D870 /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				5EED769A17B0FE50003BEB53 /* MenuRootViewController.h */,
+				5EED769B17B0FE50003BEB53 /* MenuRootViewController.m */,
 				5EED76A217B0FF42003BEB53 /* LeftMenuSegue.h */,
 				5EED76A317B0FF42003BEB53 /* LeftMenuSegue.m */,
 				5EC9786817B1DECF0003D870 /* ContentSegue.h */,
@@ -123,8 +125,6 @@
 				5EED768E17B0FE50003BEB53 /* AppDelegate.h */,
 				5EED768F17B0FE50003BEB53 /* AppDelegate.m */,
 				5EED769717B0FE50003BEB53 /* MainStoryboard.storyboard */,
-				5EED769A17B0FE50003BEB53 /* MenuRootViewController.h */,
-				5EED769B17B0FE50003BEB53 /* MenuRootViewController.m */,
 				5EED768617B0FE50003BEB53 /* Supporting Files */,
 				5EC9786B17B1F7C20003D870 /* SlideMenu */,
 				5EC9787217B1F8580003D870 /* LeftMenu */,

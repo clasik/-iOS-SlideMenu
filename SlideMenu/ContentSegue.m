@@ -23,7 +23,7 @@
     [rootController.view addSubview:contentController.view];
     [contentController didMoveToParentViewController:rootController];
     
-    [rootController setCurrentController:contentController];
+    [rootController setCurrentContentController:contentController];
 }
 
 @end

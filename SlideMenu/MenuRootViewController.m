@@ -24,8 +24,19 @@
     [self performSegueWithIdentifier:@"first" sender:self];
     
     [UIView animateWithDuration:0.5 animations:^(void){
-        self.CurrentController.view.frame = CGRectMake(240, self.CurrentController.view.frame.origin.y, self.CurrentController.view.frame.size.width, self.CurrentController.view.frame.size.height);
+        self.CurrentContentController.view.frame = CGRectMake(240, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
     }];
+}
+
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    CGRect bounds = self.view.bounds;
+    self.CurrentContentController.view.frame = CGRectMake(self.CurrentContentController.view.frame.origin.x, 0, bounds.size.width, bounds.size.height);
+    
+    //if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        //self.CurrentContentController.view.frame = CGRectMake(0, 0, bounds.size.width, bounds.size.height);
+    //}
+
 }
 
 - (void)didReceiveMemoryWarning
