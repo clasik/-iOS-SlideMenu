@@ -11,6 +11,7 @@
 		5EC9786A17B1DECF0003D870 /* ContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9786917B1DECF0003D870 /* ContentSegue.m */; };
 		5EC9787117B1F8300003D870 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9787017B1F8300003D870 /* MenuViewController.m */; };
 		5EC9787517B1F88B0003D870 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9787417B1F88B0003D870 /* MenuCell.m */; };
+		5EE41A8B17B8A02700D622D3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE41A8A17B8A02700D622D3 /* SecondViewController.m */; };
 		5EED768017B0FE50003BEB53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED767F17B0FE50003BEB53 /* UIKit.framework */; };
 		5EED768217B0FE50003BEB53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED768117B0FE50003BEB53 /* Foundation.framework */; };
 		5EED768417B0FE50003BEB53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED768317B0FE50003BEB53 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 		5EC9787317B1F88B0003D870 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
 		5EC9787417B1F88B0003D870 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
 		5EE41A8817B884A800D622D3 /* MenuControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuControllerDelegate.h; sourceTree = "<group>"; };
+		5EE41A8917B8A02700D622D3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5EE41A8A17B8A02700D622D3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5EED767C17B0FE50003BEB53 /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EED767F17B0FE50003BEB53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EED768117B0FE50003BEB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				5EC9787217B1F8580003D870 /* LeftMenu */,
 				5EC32FFB17B344A100F79515 /* firstViewController.h */,
 				5EC32FFC17B344A100F79515 /* firstViewController.m */,
+				5EE41A8917B8A02700D622D3 /* SecondViewController.h */,
+				5EE41A8A17B8A02700D622D3 /* SecondViewController.m */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				5EC9787117B1F8300003D870 /* MenuViewController.m in Sources */,
 				5EC9787517B1F88B0003D870 /* MenuCell.m in Sources */,
 				5EC32FFD17B344A200F79515 /* firstViewController.m in Sources */,
+				5EE41A8B17B8A02700D622D3 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
