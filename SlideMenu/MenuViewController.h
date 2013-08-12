@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuControllerDelegate.h"
 
-@interface MenuViewController : UITableViewController
+@interface MenuViewController : UITableViewController<MenuControllerDelegate>
 
 @end

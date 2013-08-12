@@ -10,8 +10,6 @@
 #import "MenuRootViewController.h"
 #import "ContentControllerDelegate.h"
 
-@interface firstViewController : UIViewController//<ContentControllerDelegate>
-
-@property(nonatomic,retain) MenuRootViewController *parentViewController;
+@interface firstViewController : UIViewController<ContentControllerDelegate>
 
 @end

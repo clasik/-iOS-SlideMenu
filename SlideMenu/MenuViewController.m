@@ -111,6 +111,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    switch (indexPath.row) {
+        case 0:
+            [self.parentViewController openContentWithContentID:@"first"];
+            break;
+        case 1:
+            [self.parentViewController openContentWithContentID:@"second"];
+            break;
+        default:
+            break;
+    }
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

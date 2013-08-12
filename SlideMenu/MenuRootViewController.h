@@ -17,4 +17,6 @@
 -(void)openMenu;
 -(void)closeMenu;
 -(void)toggleMenu;
+
+-(void)openContentWithContentID:(NSString*)contentID;
 @end

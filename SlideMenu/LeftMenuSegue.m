@@ -25,6 +25,11 @@
     [menuController didMoveToParentViewController:rootController];
     
     [rootController setMenuController:menuController];
+    
+    if([menuController respondsToSelector:@selector(setParentViewController:)])
+    {
+        [menuController performSelector:@selector(setParentViewController:) withObject:rootController];
+    }
 }
 
 @end

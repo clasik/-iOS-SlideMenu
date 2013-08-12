@@ -42,10 +42,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)openContentWithContentID:(NSString *)contentID
+{
+    [self performSegueWithIdentifier:contentID sender:self];
+}
 -(void)openMenu
 {
-    [UIView animateWithDuration:0.5 animations:^(void){
+    [UIView animateWithDuration:0.3 animations:^(void){
         self.CurrentContentController.view.frame = CGRectMake(240, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
     } completion:^(BOOL finished){
         self.isOpen = true;
@@ -54,7 +57,7 @@
 
 -(void)closeMenu
 {
-    [UIView animateWithDuration:0.5 animations:^(void){
+    [UIView animateWithDuration:0.3 animations:^(void){
         self.CurrentContentController.view.frame = CGRectMake(0, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
     } completion:^(BOOL finished){
         self.isOpen = false;

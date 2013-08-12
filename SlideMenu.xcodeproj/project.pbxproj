@@ -35,6 +35,7 @@
 		5EC9787017B1F8300003D870 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		5EC9787317B1F88B0003D870 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
 		5EC9787417B1F88B0003D870 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		5EE41A8817B884A800D622D3 /* MenuControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuControllerDelegate.h; sourceTree = "<group>"; };
 		5EED767C17B0FE50003BEB53 /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EED767F17B0FE50003BEB53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EED768117B0FE50003BEB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +80,7 @@
 				5EC9786817B1DECF0003D870 /* ContentSegue.h */,
 				5EC9786917B1DECF0003D870 /* ContentSegue.m */,
 				5EBF0AA817B4DFEB004AAB7D /* ContentControllerDelegate.h */,
+				5EE41A8817B884A800D622D3 /* MenuControllerDelegate.h */,
 			);
 			name = SlideMenu;
 			sourceTree = "<group>";
