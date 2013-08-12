@@ -11,6 +11,10 @@
 
 @protocol MenuControllerDelegate
 
+@optional
 @property(nonatomic,retain) MenuRootViewController *parentViewController;
+
+@required
+-(NSString*)DefaultContentViewControllerSegueID;
 
 @end

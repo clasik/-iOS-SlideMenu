@@ -23,7 +23,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self performSegueWithIdentifier:@"menu" sender:self];
-    [self performSegueWithIdentifier:@"first" sender:self];
 }
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
@@ -48,7 +47,7 @@
 }
 -(void)openMenu
 {
-    [UIView animateWithDuration:0.3 animations:^(void){
+    [UIView animateWithDuration:0.2 animations:^(void){
         self.CurrentContentController.view.frame = CGRectMake(240, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
     } completion:^(BOOL finished){
         self.isOpen = true;
@@ -57,7 +56,7 @@
 
 -(void)closeMenu
 {
-    [UIView animateWithDuration:0.3 animations:^(void){
+    [UIView animateWithDuration:0.2 animations:^(void){
         self.CurrentContentController.view.frame = CGRectMake(0, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
     } completion:^(BOOL finished){
         self.isOpen = false;
