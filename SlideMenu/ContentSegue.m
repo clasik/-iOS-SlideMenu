@@ -8,12 +8,14 @@
 
 #import "ContentSegue.h"
 #import "MenuRootViewController.h"
+#import "ContentControllerDelegate.h"
 @implementation ContentSegue
 
 -(void)perform
 {
     MenuRootViewController *rootController = self.sourceViewController;
     UIViewController *contentController = self.destinationViewController;
+    UIViewController *tmpController = rootController.CurrentContentController;
     
     CGRect bounds = rootController.view.bounds;
     contentController.view.frame = CGRectMake(0, 0, bounds.size.width, bounds.size.height);
@@ -24,6 +26,16 @@
     [contentController didMoveToParentViewController:rootController];
     
     [rootController setCurrentContentController:contentController];
+    
+    if([contentController respondsToSelector:@selector(setParentViewController:)])
+    {
+        [contentController performSelector:@selector(setParentViewController:) withObject:rootController];
+    }
+    
+    if(tmpController != nil)
+    {
+        [tmpController removeFromParentViewController];
+    }
 }
 
 @end

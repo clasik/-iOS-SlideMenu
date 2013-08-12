@@ -7,8 +7,10 @@
 //
 
 #import "firstViewController.h"
-
+#import "ContentControllerDelegate.h"
 @interface firstViewController ()
+
+-(IBAction)btnMenu:(id)sender;
 
 @end
 
@@ -35,5 +37,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)btnMenu:(id)sender
+{
+    [self.parentViewController toggleMenu];
+}
+
 
 @end

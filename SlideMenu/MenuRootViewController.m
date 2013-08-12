@@ -12,6 +12,8 @@
 
 @property(nonatomic,retain) NSMutableArray *viewControllers;
 
+@property(nonatomic) BOOL isOpen;
+
 @end
 
 @implementation MenuRootViewController
@@ -22,10 +24,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self performSegueWithIdentifier:@"menu" sender:self];
     [self performSegueWithIdentifier:@"first" sender:self];
-    
-    [UIView animateWithDuration:0.5 animations:^(void){
-        self.CurrentContentController.view.frame = CGRectMake(240, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
-    }];
 }
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
@@ -43,6 +41,37 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)openMenu
+{
+    [UIView animateWithDuration:0.5 animations:^(void){
+        self.CurrentContentController.view.frame = CGRectMake(240, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
+    } completion:^(BOOL finished){
+        self.isOpen = true;
+    }];
+}
+
+-(void)closeMenu
+{
+    [UIView animateWithDuration:0.5 animations:^(void){
+        self.CurrentContentController.view.frame = CGRectMake(0, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
+    } completion:^(BOOL finished){
+        self.isOpen = false;
+    }];
+}
+
+-(void)toggleMenu
+{
+    if(self.isOpen)
+        [self closeMenu];
+    else
+        [self openMenu];    
+}
+
+-(BOOL)isMenuOpen
+{
+    return self.isOpen;
 }
 
 @end

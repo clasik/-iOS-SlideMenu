@@ -13,4 +13,8 @@
 @property(nonatomic,retain) UIViewController *MenuController;
 @property(nonatomic,retain) UIViewController *CurrentContentController;
 
+-(BOOL) isMenuOpen;
+-(void)openMenu;
+-(void)closeMenu;
+-(void)toggleMenu;
 @end

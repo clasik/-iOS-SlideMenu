@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuRootViewController.h"
+#import "ContentControllerDelegate.h"
 
-@interface firstViewController : UIViewController
+@interface firstViewController : UIViewController//<ContentControllerDelegate>
+
+@property(nonatomic,retain) MenuRootViewController *parentViewController;
 
 @end

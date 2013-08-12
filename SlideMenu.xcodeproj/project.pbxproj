@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EBF0AA817B4DFEB004AAB7D /* ContentControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentControllerDelegate.h; sourceTree = "<group>"; };
 		5EC32FFB17B344A100F79515 /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstViewController.h; sourceTree = "<group>"; };
 		5EC32FFC17B344A100F79515 /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstViewController.m; sourceTree = "<group>"; };
 		5EC9786817B1DECF0003D870 /* ContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSegue.h; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 				5EED76A317B0FF42003BEB53 /* LeftMenuSegue.m */,
 				5EC9786817B1DECF0003D870 /* ContentSegue.h */,
 				5EC9786917B1DECF0003D870 /* ContentSegue.m */,
+				5EBF0AA817B4DFEB004AAB7D /* ContentControllerDelegate.h */,
 			);
 			name = SlideMenu;
 			sourceTree = "<group>";
