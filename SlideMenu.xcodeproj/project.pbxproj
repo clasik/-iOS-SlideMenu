@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC2FF4217B9FEAE0014C6D4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC2FF4117B9FEAE0014C6D4 /* Icon.png */; };
+		5EC2FF4417B9FEB40014C6D4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EC2FF4317B9FEB40014C6D4 /* Icon@2x.png */; };
 		5EC32FFD17B344A200F79515 /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC32FFC17B344A100F79515 /* firstViewController.m */; };
 		5EC9786A17B1DECF0003D870 /* ContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9786917B1DECF0003D870 /* ContentSegue.m */; };
 		5EC9787117B1F8300003D870 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9787017B1F8300003D870 /* MenuViewController.m */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		5EBF0AA817B4DFEB004AAB7D /* ContentControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentControllerDelegate.h; sourceTree = "<group>"; };
+		5EC2FF4117B9FEAE0014C6D4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		5EC2FF4317B9FEB40014C6D4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		5EC32FFB17B344A100F79515 /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstViewController.h; sourceTree = "<group>"; };
 		5EC32FFC17B344A100F79515 /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstViewController.m; sourceTree = "<group>"; };
 		5EC9786817B1DECF0003D870 /* ContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSegue.h; sourceTree = "<group>"; };
@@ -73,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EC2FF4517B9FF470014C6D4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5EC2FF4317B9FEB40014C6D4 /* Icon@2x.png */,
+				5EC2FF4117B9FEAE0014C6D4 /* Icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		5EC9786B17B1F7C20003D870 /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +148,7 @@
 				5EED768617B0FE50003BEB53 /* Supporting Files */,
 				5EC9786B17B1F7C20003D870 /* SlideMenu */,
 				5EC9787217B1F8580003D870 /* LeftMenu */,
+				5EC2FF4517B9FF470014C6D4 /* Images */,
 				5EC32FFB17B344A100F79515 /* firstViewController.h */,
 				5EC32FFC17B344A100F79515 /* firstViewController.m */,
 				5EE41A8917B8A02700D622D3 /* SecondViewController.h */,
@@ -213,6 +227,8 @@
 				5EED769417B0FE50003BEB53 /* Default@2x.png in Resources */,
 				5EED769617B0FE50003BEB53 /* Default-568h@2x.png in Resources */,
 				5EED769917B0FE50003BEB53 /* MainStoryboard.storyboard in Resources */,
+				5EC2FF4217B9FEAE0014C6D4 /* Icon.png in Resources */,
+				5EC2FF4417B9FEB40014C6D4 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
