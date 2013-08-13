@@ -19,4 +19,5 @@
 -(void)toggleMenu;
 
 -(void)openContentWithContentID:(NSString*)contentID;
+-(void)panContentView:(UIPanGestureRecognizer*)gesture;
 @end

@@ -76,4 +76,34 @@
     return self.isOpen;
 }
 
+-(void)panContentView:(UIPanGestureRecognizer*)gesture
+{
+    //NSLog(@"panning...");
+    CGPoint translation = [gesture translationInView:gesture.view];
+    NSLog(@"translation:(%f,%f)",translation.x,translation.y);
+    
+    gesture.view.center = CGPointMake(gesture.view.center.x + translation.x,gesture.view.center.y);
+    NSLog(@"center:(%f,%f)",gesture.view.center.x,gesture.view.center.y);
+    
+    [gesture setTranslation:CGPointMake(0, 0) inView:gesture.view];
+    
+    if (gesture.state == UIGestureRecognizerStateEnded) {
+        
+        CGPoint finalPoint = CGPointMake(gesture.view.center.x,
+                                         gesture.view.center.y);
+        NSLog(@"finalPoint:(%f,%f)",finalPoint.x,finalPoint.y);
+        
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            gesture.view.center = finalPoint;
+        } completion:^(BOOL finished)
+         {
+             float width = self.view.bounds.size.width;
+             if(finalPoint.x >= width)
+                 [self openMenu];
+             else
+                 [self closeMenu];
+         }];
+        
+    }
+}
 @end

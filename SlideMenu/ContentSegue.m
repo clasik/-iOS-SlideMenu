@@ -20,6 +20,8 @@
     if(tmpController != nil)
     {
         contentController.view.frame = CGRectMake(tmpController.view.frame.origin.x, tmpController.view.frame.origin.y,tmpController.view.frame.size.width, tmpController.view.frame.size.height);
+        for(int i = 0;i < tmpController.view.gestureRecognizers.count;i++)
+            [tmpController.view removeGestureRecognizer:tmpController.view.gestureRecognizers[i]];
     }
     else
     {
@@ -31,6 +33,9 @@
     [rootController.view addSubview:contentController.view];
     [contentController didMoveToParentViewController:rootController];
     
+    UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc]initWithTarget:rootController action:@selector(panContentView:)];
+    [contentController.view addGestureRecognizer:gesture];
+    
     [rootController setCurrentContentController:contentController];
     
     if([contentController respondsToSelector:@selector(setParentViewController:)])
@@ -40,6 +45,7 @@
     
     if(tmpController != nil)
     {
+        [tmpController.view removeFromSuperview];
         [tmpController removeFromParentViewController];
     }
     
