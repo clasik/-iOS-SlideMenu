@@ -8,7 +8,7 @@
 
 #import "firstViewController.h"
 #import "ContentControllerDelegate.h"
-@interface firstViewController ()
+@interface firstViewController ()<ContentControllerDelegate>
 
 -(IBAction)btnMenu:(id)sender;
 

@@ -10,6 +10,6 @@
 #import "MenuRootViewController.h"
 #import "ContentControllerDelegate.h"
 
-@interface firstViewController : UIViewController<ContentControllerDelegate>
+@interface firstViewController : UIViewController
 
 @end

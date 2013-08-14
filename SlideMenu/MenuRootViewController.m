@@ -78,32 +78,23 @@
 
 -(void)panContentView:(UIPanGestureRecognizer*)gesture
 {
-    //NSLog(@"panning...");
+    UIGestureRecognizerState state = gesture.state;
     CGPoint translation = [gesture translationInView:gesture.view];
-    NSLog(@"translation:(%f,%f)",translation.x,translation.y);
+    int finalX = gesture.view.frame.origin.x + translation.x;
+    if(finalX < 0)finalX = 0;
     
-    gesture.view.center = CGPointMake(gesture.view.center.x + translation.x,gesture.view.center.y);
-    NSLog(@"center:(%f,%f)",gesture.view.center.x,gesture.view.center.y);
-    
+    [UIView animateWithDuration:0.2 animations:^(void){
+        self.CurrentContentController.view.frame = CGRectMake(finalX, self.CurrentContentController.view.frame.origin.y, self.CurrentContentController.view.frame.size.width, self.CurrentContentController.view.frame.size.height);
+    } completion:^(BOOL finished){
+        if(state == UIGestureRecognizerStateEnded)
+        {
+            float width = self.view.bounds.size.width;
+            if(finalX >= width / 2)
+                [self openMenu];
+            else
+                [self closeMenu];
+        }
+    }];
     [gesture setTranslation:CGPointMake(0, 0) inView:gesture.view];
-    
-    if (gesture.state == UIGestureRecognizerStateEnded) {
-        
-        CGPoint finalPoint = CGPointMake(gesture.view.center.x,
-                                         gesture.view.center.y);
-        NSLog(@"finalPoint:(%f,%f)",finalPoint.x,finalPoint.y);
-        
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            gesture.view.center = finalPoint;
-        } completion:^(BOOL finished)
-         {
-             float width = self.view.bounds.size.width;
-             if(finalPoint.x >= width)
-                 [self openMenu];
-             else
-                 [self closeMenu];
-         }];
-        
-    }
 }
 @end
